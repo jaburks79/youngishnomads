@@ -1,49 +1,283 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+).slice(0, 3);
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+
+    <!-- HERO / OUR STORY -->
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Empty nester. Adventurers. Still figuring it out.</p>
+        <h1>We raised our kid.<br/>Now we're raising our game.</h1>
+        <p class="hero-sub">
+          We're John & Erica — a Kansas City couple who just became empty nesters 
+          and decided the next chapter should be our best one yet. 
+          This is where we share the trips, the lessons, and the honest reality 
+          of traveling the world while staying youngish at heart.
+        </p>
+        <a href="/about" class="btn">Read Our Story</a>
+      </div>
+    </section>
+
+    <!-- LATEST POSTS -->
+    <section class="posts-section">
+      <div class="posts-inner">
+        <h2>From the Road</h2>
+        <p class="section-sub">Our latest travel stories, tips, and honest takes.</p>
+        <div class="posts-grid">
+          {posts.map(post => (
+            <a href={`/blog/${post.slug}/`} class="post-card">
+              {post.data.heroImage && (
+                <img src={post.data.heroImage} alt={post.data.title} />
+              )}
+              <div class="post-card-body">
+                <p class="post-date">{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+                <h3>{post.data.title}</h3>
+                <p class="post-desc">{post.data.description}</p>
+                <span class="read-more">Read more →</span>
+              </div>
+            </a>
+          ))}
+        </div>
+        <div class="posts-cta">
+          <a href="/blog" class="btn-outline">All Travel Stories</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY WE DO THIS -->
+    <section class="why-section">
+      <div class="why-inner">
+        <h2>Why YoungishNomads?</h2>
+        <div class="why-grid">
+          <div class="why-card">
+            <span class="why-icon">🧭</span>
+            <h3>Real Experience</h3>
+            <p>We're not travel influencers. We're a real couple figuring out how to see the world on real budgets with real lives.</p>
+          </div>
+          <div class="why-card">
+            <span class="why-icon">🌿</span>
+            <h3>Active & Curious</h3>
+            <p>We stay active, eat well, and approach every destination with genuine curiosity — not just the tourist checklist.</p>
+          </div>
+          <div class="why-card">
+            <span class="why-icon">✈️</span>
+            <h3>The Next Chapter</h3>
+            <p>Empty nest isn't an ending. For us it's the starting gun. We're building a life that doesn't wait for retirement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+  </body>
 </html>
+
+<style>
+  .hero {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 6rem 2rem;
+  }
+
+  .hero-inner {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #A8C5A0;
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    color: var(--cream);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-sub {
+    font-size: 1.1rem;
+    color: #C8D8C4;
+    max-width: 620px;
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+  }
+
+  .btn {
+    display: inline-block;
+    background: var(--brown);
+    color: var(--cream);
+    padding: 0.85rem 2rem;
+    border-radius: 4px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    transition: background 0.2s;
+  }
+
+  .btn:hover {
+    background: var(--brown-light);
+    color: var(--cream);
+  }
+
+  .posts-section {
+    padding: 5rem 2rem;
+    background: var(--cream);
+  }
+
+  .posts-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .posts-inner h2 {
+    font-size: 2rem;
+    color: var(--forest);
+    margin-bottom: 0.5rem;
+  }
+
+  .section-sub {
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .post-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: var(--text);
+  }
+
+  .post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    color: var(--text);
+  }
+
+  .post-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .post-card-body {
+    padding: 1.5rem;
+  }
+
+  .post-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .post-card h3 {
+    font-size: 1.2rem;
+    color: var(--forest);
+    margin-bottom: 0.75rem;
+  }
+
+  .post-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+  }
+
+  .read-more {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--brown);
+  }
+
+  .posts-cta {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .btn-outline {
+    display: inline-block;
+    border: 2px solid var(--forest);
+    color: var(--forest);
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+
+  .btn-outline:hover {
+    background: var(--forest);
+    color: var(--cream);
+  }
+
+  .why-section {
+    background: var(--cream-dark);
+    padding: 5rem 2rem;
+  }
+
+  .why-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .why-inner h2 {
+    font-size: 2rem;
+    color: var(--forest);
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .why-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    border-top: 4px solid var(--forest);
+  }
+
+  .why-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .why-card h3 {
+    font-size: 1.1rem;
+    color: var(--forest);
+    margin-bottom: 0.75rem;
+  }
+
+  .why-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+  }
+</style>
