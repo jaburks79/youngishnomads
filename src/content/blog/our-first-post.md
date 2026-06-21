@@ -2,7 +2,6 @@
 title: "Our First Post: Counting Down to Ireland"
 description: "On Father's Day, reflecting on five weeks as an empty-nest-in-progress family, our travel history, and the bigger why behind this blog."
 pubDate: 2026-06-21
-heroImage: "/images/placeholder.jpg"
 ---
 
 Today is Father's Day. Our daughter has been a high school graduate for almost five weeks now, and we're deep into preparing for our Ireland trip. It feels like the right day to start this.
