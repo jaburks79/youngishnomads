@@ -8,7 +8,7 @@ Today is Father's Day. Our daughter has been a high school graduate for almost f
 
 This will be the first time any of us has been overseas — truly overseas. We've traveled internationally before in smaller ways. Erica and I went to Mexico, Jamaica, and the Cayman Islands on our honeymoon almost 19 years ago. We took our daughter on a cruise that stopped in Puerto Rico, the Dominican Republic, and Turks and Caicos. I've crossed into Canada a couple of times. Technically, we've left the country before — but nothing like this. Ireland is a different kind of trip, and we're excited in a way that feels new.
 
-**On the bigger picture**
+## On the bigger picture
 
 This trip has me reflecting on more than just packing lists. I've changed careers multiple times over the years, and I have a lot of interests outside of any one job title. Lately I've been thinking seriously about what it would take to step away from corporate life and build something of my own.
 
