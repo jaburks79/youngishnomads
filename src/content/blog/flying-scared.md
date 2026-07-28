@@ -1,9 +1,8 @@
 ---
 title: 'Flying Scared: How I Faced My Fear of Flying to Get to Ireland'
-description: 'Erica shares her honest story of overcoming a debilitating fear of flying — therapy, medication, mindset shifts, and why Ireland was worth every anxious moment.'
+description: 'Erica shares her honest story of overcoming a debilitating fear of flying - therapy, medication, mindset shifts, and why Ireland was worth every anxious moment.'
 pubDate: 'Jul 13 2026'
 author: 'Erica of Youngish Nomads'
-heroImage: ''
 ---
 
 Hi, I'm Erica—the other half of Youngish Nomads.
