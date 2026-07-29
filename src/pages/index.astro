@@ -5,7 +5,7 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
-import couplePhoto from '../assets/people/john-and-erica-ai.png';
+import heroPhoto from '../assets/nyc.jpg';
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -27,7 +27,7 @@ const posts = (await getCollection('blog')).sort(
           <p class="eyebrow">Empty nesters. Adventurers. Still figuring it out.</p>
           <h1>We raised our kid.<br/>Now we're raising our game.</h1>
           <p class="hero-sub">
-            We're John & Erica — a Kansas City couple who just became empty nesters
+            We're John & Erica — a Missouri couple who just became empty nesters
             and decided the next chapter should be our best one yet.
             This is where we share the trips, the lessons, and the honest reality
             of traveling the world while staying youngish at heart.
@@ -36,11 +36,11 @@ const posts = (await getCollection('blog')).sort(
         </div>
         <div class="hero-photo">
           <Image
-            src={couplePhoto}
-            alt="John and Erica — Youngish Nomads"
+            src={heroPhoto}
+            alt="New York City — one of the many destinations on our list"
             width={480}
             height={560}
-            class="couple-img"
+            class="hero-img"
           />
         </div>
       </div>
@@ -160,7 +160,7 @@ const posts = (await getCollection('blog')).sort(
     justify-content: center;
   }
 
-  .couple-img {
+  .hero-img {
     width: 100%;
     max-width: 420px;
     height: 500px;
@@ -179,8 +179,8 @@ const posts = (await getCollection('blog')).sort(
       order: -1;
     }
 
-    .couple-img {
-      height: 360px;
+    .hero-img {
+      height: 280px;
       max-width: 100%;
     }
   }
