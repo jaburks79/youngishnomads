@@ -6,85 +6,236 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'blog'>['data'] & { rawContent?: string };
+const { title, description, pubDate, updatedDate, heroImage, author } = Astro.props;
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const siteUrl = 'https://youngishnomads.com';
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "datePublished": pubDate.toISOString(),
+  "dateModified": updatedDate ? updatedDate.toISOString() : pubDate.toISOString(),
+  "author": {
+    "@type": "Person",
+    "name": author || "Youngish Nomads"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Youngish Nomads",
+    "url": siteUrl
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": siteUrl
+  }
+};
 ---
-
 <html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-			.prose h2 {
-				margin-top: 2rem;
-				margin-bottom: 1rem;
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
-	</head>
+  <head>
+    <BaseHead title={title} description={description} />
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <style>
+      .post-hero {
+        background: var(--forest);
+        color: var(--cream);
+        padding: 4rem 2rem 3rem;
+        text-align: center;
+      }
 
-	<body>
-		<Header />
-		<main>
-			<article>
-				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
-				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
-					</div>
-					<slot />
-				</div>
-			</article>
-		</main>
-		<Footer />
-	</body>
+      .post-hero h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(1.8rem, 4vw, 2.8rem);
+        color: var(--cream);
+        line-height: 1.25;
+        max-width: 780px;
+        margin: 0 auto 1.25rem;
+      }
+
+      .post-meta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        font-size: 0.82rem;
+        color: #A8C5A0;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        flex-wrap: wrap;
+      }
+
+      .post-meta .dot {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: #A8C5A0;
+        display: inline-block;
+      }
+
+      .hero-image {
+        width: 100%;
+        max-height: 480px;
+        overflow: hidden;
+      }
+
+      .hero-image img {
+        display: block;
+        width: 100%;
+        height: 480px;
+        object-fit: cover;
+      }
+
+      .prose-wrap {
+        max-width: 740px;
+        margin: 0 auto;
+        padding: 3rem 2rem 5rem;
+      }
+
+      .prose {
+        color: var(--text);
+        font-family: 'Inter', sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.85;
+        font-weight: 300;
+      }
+
+      .prose h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.6rem;
+        color: var(--forest);
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+
+      .prose h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.25rem;
+        color: var(--forest);
+        margin-top: 2rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .prose p {
+        margin-bottom: 1.5rem;
+      }
+
+      .prose ul, .prose ol {
+        margin: 0 0 1.5rem 1.5rem;
+      }
+
+      .prose li {
+        margin-bottom: 0.5rem;
+      }
+
+      .prose a {
+        color: var(--forest);
+        text-decoration: underline;
+      }
+
+      .prose a:hover {
+        color: var(--brown);
+      }
+
+      .prose hr {
+        border: none;
+        border-top: 1px solid var(--cream-dark);
+        margin: 2.5rem 0;
+      }
+
+      .prose strong {
+        font-weight: 500;
+        color: var(--text);
+      }
+
+      .post-footer {
+        border-top: 1px solid var(--cream-dark);
+        margin-top: 3rem;
+        padding-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .post-footer-author {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+      }
+
+      .post-footer-author strong {
+        color: var(--forest);
+        font-weight: 500;
+      }
+
+      .back-link {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--forest);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        transition: color 0.2s, gap 0.2s;
+      }
+
+      .back-link:hover {
+        color: var(--brown);
+        gap: 0.65rem;
+      }
+
+      @media (max-width: 600px) {
+        .prose-wrap {
+          padding: 2rem 1.25rem 4rem;
+        }
+
+        .post-hero {
+          padding: 3rem 1.25rem 2.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+
+    <div class="post-hero">
+      <div class="post-meta">
+        <FormattedDate date={pubDate} />
+        {author && <span class="dot"></span>}
+        {author && <span>{author}</span>}
+        {updatedDate && (
+          <>
+            <span class="dot"></span>
+            <span>Updated <FormattedDate date={updatedDate} /></span>
+          </>
+        )}
+      </div>
+      <h1>{title}</h1>
+    </div>
+
+    {heroImage && (
+      <div class="hero-image">
+        <Image width={1200} height={480} src={heroImage} alt={title} />
+      </div>
+    )}
+
+    <div class="prose-wrap">
+      <article class="prose">
+        <slot />
+      </article>
+
+      <div class="post-footer">
+        {author && (
+          <p class="post-footer-author">Written by <strong>{author}</strong></p>
+        )}
+        <a class="back-link" href="/blog">← All travel stories</a>
+      </div>
+    </div>
+
+    <Footer />
+  </body>
 </html>
