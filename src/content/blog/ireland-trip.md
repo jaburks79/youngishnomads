@@ -4,24 +4,6 @@ description: "We just got back from eight days in Ireland with our daughter — 
 pubDate: 2026-08-02
 ---
 
-import { Image } from 'astro:assets';
-import Welcome from '../../assets/ireland/Welcome.jpg';
-import Trinity from '../../assets/ireland/Trinity.jpg';
-import TrinityStaircase from '../../assets/ireland/Trinity-Staircase.jpg';
-import TempleBar from '../../assets/ireland/Temple-Bar.jpg';
-import LeftHandDrive from '../../assets/ireland/Left-hand-drive.jpg';
-import Howth from '../../assets/ireland/Howth.jpg';
-import Guiness from '../../assets/ireland/Guiness.jpg';
-import Galway from '../../assets/ireland/Galway.jpg';
-import CliffsOfMoher from '../../assets/ireland/Cliffs-of-Moher.jpg';
-import Killarney from '../../assets/ireland/Killarney.jpg';
-import Cork from '../../assets/ireland/Cork.jpg';
-import BlarneyCastle from '../../assets/ireland/Blarney-Castle.jpg';
-import Belfast from '../../assets/ireland/Belfast.jpg';
-import DunlaceCastle from '../../assets/ireland/Dunlace-Castle.jpg';
-import GiantsCauseway from '../../assets/ireland/giants-causeway.jpg';
-import DublinCity from '../../assets/ireland/DublinCity.jpg';
-
 We've been home for about a week now, fresh off eight days in Ireland. The laundry is done, the jet lag has faded, and we've had enough time to decompress and actually process what just happened — our first trip overseas as a family, and honestly one of the best trips we've ever taken.
 
 Here's the full recap.
@@ -38,14 +20,6 @@ Good to know for next time: I'll prioritize getting as much sleep as possible *b
 
 ## Dublin: Guinness, Castles, and the Best Pub Tip We Got
 
-<Image src={Welcome} alt="Arriving in Ireland" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
-<Image src={Trinity} alt="Trinity College Dublin" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
-<Image src={TrinityStaircase} alt="Trinity College Staircase" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
-<Image src={TempleBar} alt="Temple Bar Dublin" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
-<Image src={LeftHandDrive} alt="Driving on the left in Ireland" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
-<Image src={Howth} alt="Cliffs of Howth" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
-<Image src={Guiness} alt="Guinness in Dublin" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
-
 We landed in Dublin at 10am local time after well over 24 hours without sleep. We grabbed a 15-minute nap at the hotel and went straight out into the city — because what else do you do?
 
 Dublin is a fantastic city. Lively, walkable, and genuinely welcoming. Our rideshare driver gave us what turned out to be great advice — he pointed us to a specific pub he swore served the best Guinness in Dublin. I was skeptical. Guinness is *made* in Dublin. How different could it be?
@@ -61,9 +35,6 @@ One practical note for anyone planning a Dublin trip: restrooms are *not* as acc
 ---
 
 ## Galway: Our Favorite Stop in Ireland
-
-<Image src={Galway} alt="Galway Ireland" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
-<Image src={CliffsOfMoher} alt="Cliffs of Moher" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
 
 We took the train from Dublin to Galway and immediately understood why people love this town. It has a beach town energy — relaxed, fun, and full of character. Probably our favorite place we visited in all of Ireland.
 
@@ -83,16 +54,11 @@ We made it. And it was absolutely worth it.
 
 ## Killarney: A Parade and a National Park
 
-<Image src={Killarney} alt="Killarney Ireland" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
-
 From the Cliffs of Moher we drove to Killarney, a charming town that happened to have a parade going through it the day we arrived. We spent time in Killarney National Park, which was beautiful, before heading on to Cork the next day.
 
 ---
 
 ## Cork: Blarney Stones and a City That Grows on You
-
-<Image src={Cork} alt="Cork Ireland" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
-<Image src={BlarneyCastle} alt="Blarney Castle" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
 
 Cork took a little time to warm up to — we weren't sure about it at first — but by the end of our time there we really enjoyed it. The highlight was Blarney Castle, where our daughter kissed the Blarney Stone.
 
@@ -112,16 +78,11 @@ Two more days in Dublin. We weren't ready to go home anyway.
 
 ## Northern Ireland: Giants Causeway and a Game of Thrones Castle
 
-<Image src={Belfast} alt="Belfast Northern Ireland" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
-<Image src={DunlaceCastle} alt="Dunlace Castle Northern Ireland" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
-<Image src={GiantsCauseway} alt="Giants Causeway Northern Ireland" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
-<Image src={DublinCity} alt="Dublin City" style="width:100%;border-radius:8px;margin:1.5rem 0;" />
-
 With our bonus day we took a tour bus up to Northern Ireland — and it was one of the best decisions of the whole trip.
 
 A few things we noticed crossing into Northern Ireland: road signs switch to English only (no Irish language), speed limits go back to mph, and the vibe shifts slightly. It felt familiar in a different way.
 
-We visited Dunlace Castle, which served as the House of Greyjoy in Game of Thrones — dramatic, perched on the cliffs, exactly as striking in person as it looks on screen. But the real standout was Giants Causeway. The hexagonal basalt columns stretching out into the sea were unlike anything I've seen. Probably my single favorite place in all of Ireland.
+We visited Dunluce Castle, which served as the House of Greyjoy in Game of Thrones — dramatic, perched on the cliffs, exactly as striking in person as it looks on screen. But the real standout was Giants Causeway. The hexagonal basalt columns stretching out into the sea were unlike anything I've seen. Probably my single favorite place in all of Ireland.
 
 We finished the day in Belfast before making our way back to Dublin for one last evening — which ended with running into friends I hadn't seen in over a decade who happened to be in town on vacation. Ireland keeps giving.
 
