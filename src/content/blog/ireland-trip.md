@@ -78,11 +78,13 @@ Two more days in Dublin. We weren't ready to go home anyway.
 
 ## Northern Ireland: Giants Causeway and a Game of Thrones Castle
 
+![Belfast Northern Ireland](../../assets/ireland/Belfast.webp)
+
 With our bonus day we took a tour bus up to Northern Ireland — and it was one of the best decisions of the whole trip.
 
 A few things we noticed crossing into Northern Ireland: road signs switch to English only (no Irish language), speed limits go back to mph, and the vibe shifts slightly. It felt familiar in a different way.
 
-We visited Dunluce Castle, which served as the House of Greyjoy in Game of Thrones — dramatic, perched on the cliffs, exactly as striking in person as it looks on screen. But the real standout was Giants Causeway. The hexagonal basalt columns stretching out into the sea were unlike anything I've seen. Probably my single favorite place in all of Ireland.
+We visited Dunlace Castle, which served as the House of Greyjoy in Game of Thrones — dramatic, perched on the cliffs, exactly as striking in person as it looks on screen. But the real standout was Giants Causeway. The hexagonal basalt columns stretching out into the sea were unlike anything I've seen. Probably my single favorite place in all of Ireland.
 
 We finished the day in Belfast before making our way back to Dublin for one last evening — which ended with running into friends I hadn't seen in over a decade who happened to be in town on vacation. Ireland keeps giving.
 
