@@ -39,3 +39,26 @@ a {
 a:hover {
   color: var(--brown);
 }
+
+article img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  display: block;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+article img:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  transform: translateY(-2px);
+}
+
+article a:has(img) {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
