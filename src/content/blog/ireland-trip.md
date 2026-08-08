@@ -78,7 +78,7 @@ Two more days in Dublin. We weren't ready to go home anyway.
 
 ## Northern Ireland: Giants Causeway and a Game of Thrones Castle
 
-[![Belfast Northern Ireland](../../assets/ireland/Belfast.webp)](../../assets/ireland/Belfast.webp)
+[![Belfast Northern Ireland](/ireland/Belfast.webp)](/ireland/Belfast.webp)
 
 With our bonus day we took a tour bus up to Northern Ireland — and it was one of the best decisions of the whole trip.
 
