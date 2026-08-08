@@ -20,21 +20,37 @@ Good to know for next time: I'll prioritize getting as much sleep as possible *b
 
 ## Dublin: Guinness, Castles, and the Best Pub Tip We Got
 
+[![Welcome to Dublin](/ireland/Welcome.webp)](/ireland/Welcome.webp)
+
 We landed in Dublin at 10am local time after well over 24 hours without sleep. We grabbed a 15-minute nap at the hotel and went straight out into the city — because what else do you do?
 
 Dublin is a fantastic city. Lively, walkable, and genuinely welcoming. Our rideshare driver gave us what turned out to be great advice — he pointed us to a specific pub he swore served the best Guinness in Dublin. I was skeptical. Guinness is *made* in Dublin. How different could it be?
 
 Pretty different, as it turns out. Whether it's the way the keg is tapped, how it's stored, or something else entirely, there was a noticeable difference between pubs. I made it a personal mission to have a Guinness at nearly every pub we visited for the rest of the trip. Research purposes only.
 
+[![Guinness Dublin](/ireland/Guiness.webp)](/ireland/Guiness.webp)
+
 We toured the Guinness Storehouse, which was excellent — I learned that Guinness is 95% water, which means I was basically staying hydrated the entire trip.
 
 A few other Dublin highlights worth mentioning: Temple Bar (touristy but worth seeing), a tour of Trinity College including the Book of Kells (genuinely stunning), and a local's recommendation to take the train out to Howth — a coastal suburb with its own cliffs, great hiking, and a completely different pace from the city.
+
+[![Temple Bar Dublin](/ireland/Temple-Bar.webp)](/ireland/Temple-Bar.webp)
+
+[![Trinity College Dublin](/ireland/Trinity.webp)](/ireland/Trinity.webp)
+
+[![Trinity College Staircase](/ireland/Trinity-Staircase.webp)](/ireland/Trinity-Staircase.webp)
+
+[![Cliffs of Howth](/ireland/Howth.webp)](/ireland/Howth.webp)
+
+[![Driving on the Left](/ireland/Left-hand-drive.webp)](/ireland/Left-hand-drive.webp)
 
 One practical note for anyone planning a Dublin trip: restrooms are *not* as accessible as they are in the US. Expect to hunt for them, and expect them to be up or down several flights of stairs from wherever you actually are.
 
 ---
 
 ## Galway: Our Favorite Stop in Ireland
+
+[![Galway Ireland](/ireland/Galway.webp)](/ireland/Galway.webp)
 
 We took the train from Dublin to Galway and immediately understood why people love this town. It has a beach town energy — relaxed, fun, and full of character. Probably our favorite place we visited in all of Ireland.
 
@@ -46,6 +62,8 @@ It was also in Galway that I picked up our rental car for the next leg of the jo
 
 ## The Cliffs of Moher and the Roads That Lead There
 
+[![Cliffs of Moher](/ireland/Cliffs-of-Moher.webp)](/ireland/Cliffs-of-Moher.webp)
+
 The morning after Galway we drove to the Cliffs of Moher. The scenery was stunning. The roads were... narrow. Very narrow. Winding, hedgerow-lined, barely-wide-enough-for-two-cars narrow. For someone on their first day driving on the opposite side of the road, it was an experience.
 
 We made it. And it was absolutely worth it.
@@ -54,13 +72,19 @@ We made it. And it was absolutely worth it.
 
 ## Killarney: A Parade and a National Park
 
+[![Killarney Ireland](/ireland/Killarney.webp)](/ireland/Killarney.webp)
+
 From the Cliffs of Moher we drove to Killarney, a charming town that happened to have a parade going through it the day we arrived. We spent time in Killarney National Park, which was beautiful, before heading on to Cork the next day.
 
 ---
 
 ## Cork: Blarney Stones and a City That Grows on You
 
+[![Cork Ireland](/ireland/Cork.webp)](/ireland/Cork.webp)
+
 Cork took a little time to warm up to — we weren't sure about it at first — but by the end of our time there we really enjoyed it. The highlight was Blarney Castle, where our daughter kissed the Blarney Stone.
+
+[![Blarney Castle](/ireland/Blarney-Castle.webp)](/ireland/Blarney-Castle.webp)
 
 **Tip if you're planning to go:** Get there as early as possible. The line to get into the castle can stretch to multiple hours later in the day. Early arrival makes a huge difference.
 
@@ -84,9 +108,15 @@ With our bonus day we took a tour bus up to Northern Ireland — and it was one 
 
 A few things we noticed crossing into Northern Ireland: road signs switch to English only (no Irish language), speed limits go back to mph, and the vibe shifts slightly. It felt familiar in a different way.
 
+[![Dunlace Castle Northern Ireland](/ireland/Dunlace-Castle.webp)](/ireland/Dunlace-Castle.webp)
+
 We visited Dunlace Castle, which served as the House of Greyjoy in Game of Thrones — dramatic, perched on the cliffs, exactly as striking in person as it looks on screen. But the real standout was Giants Causeway. The hexagonal basalt columns stretching out into the sea were unlike anything I've seen. Probably my single favorite place in all of Ireland.
 
+[![Giants Causeway](/ireland/giants-causeway.webp)](/ireland/giants-causeway.webp)
+
 We finished the day in Belfast before making our way back to Dublin for one last evening — which ended with running into friends I hadn't seen in over a decade who happened to be in town on vacation. Ireland keeps giving.
+
+[![Dublin City](/ireland/DublinCity.webp)](/ireland/DublinCity.webp)
 
 ---
 
